@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="marvel.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="inputs">
+        <label for="name">First Name</label>
+            <input type="text" name="name" id="name">
+    
+        <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+        <button onclick="main(document.getElementById('name').value,document.getElementById('dob').value)">Submit</button>
+    </div>
+
     <ul class="characters">
         <li id="Ironman">
             <img src="ironman.png" alt="Ironman" width="10%" height="10%">            
@@ -21,12 +32,12 @@
             <img src="blackWidow.png" alt="Black Widow" width="10%" height="10%">
             <p></p>
         </li>
-        <li id="Hawkeye">
-            <img src="hawkeye.png" alt="Hawkeye" width="10%" height="10%">
-            <p></p>
-        </li>
         <li id="Thor">
             <img src="thor.png" alt="Thor" width="10%" height="10%">
+            <p></p>
+        </li>
+        <li id="Hawkeye">
+            <img src="hawkeye.png" alt="Hawkeye" width="10%" height="10%">
             <p></p>
         </li>
         <li id="Hulk">
@@ -45,12 +56,12 @@
             <img src="drStrange.png" alt="Dr Strange" width="11%" height="11%">
             <p></p>
         </li>
-        <li id="Starlord">
-            <img src="starlord.png" alt="Starlord" width="11%" height="11%">
-            <p></p>
-        </li>
         <li id="BlackPanther">
             <img src="blackPanther.png" alt="Black Panther" width="10%" height="10%">
+            <p></p>
+        </li>
+        <li id="Starlord">
+            <img src="starlord.png" alt="Starlord" width="11%" height="11%">
             <p></p>
         </li>
         <li id="WinterSoldier">
