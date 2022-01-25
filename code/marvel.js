@@ -31,37 +31,37 @@ function horoscope(day, month){
 
 function page(character){
     if(character == "ironman") { 
-        window.location.replace("../ironman.html"); 
+        window.location.replace("./ironman.html"); 
     } 
     else if (character == "captainAmerica"){
-        window.location.replace("../captainAmerica.html"); 
+        window.location.replace("./captainAmerica.html"); 
     }
     else if (character == "blackWidow"){
-        window.location.replace("../blackWidow.html"); 
+        window.location.replace("./blackWidow.html"); 
     }
     else if (character == "thor"){
-        window.location.replace("../thor.html"); 
+        window.location.replace("./thor.html"); 
     }
     else if (character == "hawkeye"){
-        window.location.replace("../hawkeye.html"); 
+        window.location.replace("./hawkeye.html"); 
     }
     else if (character == "vision"){
-        window.location.replace("../vision.html"); 
+        window.location.replace("./vision.html"); 
     }
     else if (character == "spiderman"){
-        window.location.replace("../spiderman.html"); 
+        window.location.replace("./spiderman.html"); 
     }
     else if (character == "drStrange"){
-        window.location.replace("../drStrange.html"); 
+        window.location.replace("./drStrange.html"); 
     }
     else if (character == "blackPanther"){
-        window.location.replace("../blackPanther.html"); 
+        window.location.replace("./blackPanther.html"); 
     }
     else if (character == "starlord"){
-        window.location.replace("../starlord.html"); 
+        window.location.replace("./starlord.html"); 
     }
     else if (character == "winterSoldier"){
-        window.location.replace("../winterSoldier.html"); 
+        window.location.replace("./winterSoldier.html"); 
     }
 }
 
