@@ -17,6 +17,7 @@ img:hover{
 .image-grid {
     display: flex;
     flex-wrap: wrap;
+    max-width: 848px;
 }
   
 .image-grid > img {
