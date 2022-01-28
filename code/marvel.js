@@ -23,7 +23,7 @@ function horoscope(day, month){
     } else if((month == 9 && day >= 24) || (month == 10 && day <= 23)) {
         return "blackPanther";
     } else if((month == 10 && day >= 24) || (month == 11 && day <= 22)) {
-        return "starlord";
+        return "loki";
     } else if((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
         return "winterSoldier";
     }
@@ -57,8 +57,8 @@ function page(character){
     else if (character == "blackPanther"){
         window.location.replace("./blackPanther.html"); 
     }
-    else if (character == "starlord"){
-        window.location.replace("./starlord.html"); 
+    else if (character == "loki"){
+        window.location.replace("./loki.html"); 
     }
     else if (character == "winterSoldier"){
         window.location.replace("./winterSoldier.html"); 
