@@ -66,11 +66,11 @@ function page(character){
 }
 
 function main(name, date){
-    var dt = new Date(date);
-    var month = dt.getMonth() + 1;
-    var day = dt.getDate();
+    const dt = new Date(date);
+    const month = dt.getMonth() + 1;
+    const day = dt.getDate();
 
-    var character = horoscope(day, month);
+    const character = horoscope(day, month);
 
     console.log(name);
     console.log(character);
