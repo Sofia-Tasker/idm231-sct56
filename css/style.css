@@ -91,3 +91,10 @@ img:hover{
     height: 200px;
     width: auto;
 }
+
+/* Individual Pages */
+
+.heroImg {
+    width: 200px;
+    height: 200px;
+}
