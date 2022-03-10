@@ -9,16 +9,62 @@
     <title>Marvel Horoscope</title>
 </head>
 <body>
-    <div class="inputs">
-        <label for="name">First Name:</label>
-            <input type="text" name="name" id="name">
-    
-        <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob">
-    </div>
-    <button onclick="main(document.getElementById('name').value,document.getElementById('dob').value)">Submit</button>
+    <header>
+        <button class="help">?</button>
+        <div class="inputForm">
+            <form class="inputs">
+                <label for="name">First Name:</label>
+                    <input type="text" name="name" id="name">
+            
+                <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob">
+            </form>
+            <button onclick="main(document.getElementById('name').value,document.getElementById('dob').value)">Assemble!</button>
+        </div>
+    </header>
+
     <div class="image-grid">
-        <img src="./images/ironman.jpeg" alt="Ironman">   
+        <a href="./ironman.html" class="img">
+            <img src="./images/ironman.jpeg" alt="Ironman">
+        </a>
+        <a href="./captainAmerica.html" class="img">
+            <img src="./images/captainAmerica.jpeg" alt="captainAmerica">
+        </a>
+        <a href="./blackWidow.html" class="img">
+            <img src="./images/blackWidow.jpeg" alt="blackWidow">
+        </a>
+        <a href="./thor.html" class="img">
+            <img src="./images/thor.jpeg" alt="thor">
+        </a>
+        <a href="./hawkeye.html" class="img">
+            <img src="./images/hawkeye.jpeg" alt="hawkeye">
+        </a>
+        <a href="./hulk.html" class="img">
+            <img src="./images/hulk.jpeg" alt="hulk">
+        </a>
+        <a href="./vision.html" class="img">
+            <img src="./images/vision.jpeg" alt="vision">
+        </a>
+        <a href="./spiderman.html" class="img">
+            <img src="./images/spiderman.jpeg" alt="spiderman">
+        </a>
+        <a href="./drStrange.html" class="img">
+            <img src="./images/drStrange.jpeg" alt="drStrange">
+        </a>
+        <a href="./blackPanther.html" class="img">
+            <img src="./images/blackPanther.jpeg" alt="blackPanther">
+        </a>
+        <a href="./loki.html" class="img">
+            <img src="./images/loki.jpeg" alt="loki">
+        </a>
+        <a href="./winterSoldier.html" class="img">
+            <img src="./images/winterSoldier.jpeg" alt="winterSoldier">
+        </a>
+
+
+
+
+        <!-- <img src="./images/ironman.jpeg" alt="Ironman">
         <img src="./images/captainAmerica.jpeg" alt="Captain America">  
         <img src="./images/blackWidow.jpeg" alt="Black Widow">
         <img src="./images/thor.jpeg" alt="Thor">
@@ -29,7 +75,7 @@
         <img src="./images/drStrange.jpeg" alt="Dr Strange">
         <img src="./images/blackPanther.jpeg" alt="Black Panther">
         <img src="./images/loki.jpeg" alt="Loki">
-        <img src="./images/winterSoldier.jpeg" alt="Winter Soldier">
+        <img src="./images/winterSoldier.jpeg" alt="Winter Soldier"> -->
     </div>
     
 </body>
