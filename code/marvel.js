@@ -2,7 +2,7 @@
 // Functional code for Marvel Character Horoscope 
 
 function horoscope(day, month){
-    if((month == 1 && day >= 19) || (month == 12 && day >=22)) {
+    if((month == 1 && day <= 19) || (month == 12 && day >=22)) {
         return "ironman";
     } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
         return "captainAmerica";
