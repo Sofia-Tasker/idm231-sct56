@@ -94,7 +94,21 @@ img:hover{
 
 /* Individual Pages */
 
+.subpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .heroImg {
     width: 200px;
     height: 200px;
+}
+
+.blurb {
+    color: white;
+    max-width: 60%;
+    background-color: #bbbdd8;
+    padding: 1%;
+    border-radius: 20px;
 }
