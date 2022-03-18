@@ -1,7 +1,7 @@
 // Sofia Tasker
 // Functional code for Marvel Character Horoscope 
 
-function horoscope(day, month){
+function horoscope(day, month){ // for each set of dates, the cooresponding horoscope will be displayed
     if((month == 1 && day <= 19) || (month == 12 && day >=22)) {
         return "ironman";
     } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
@@ -29,7 +29,7 @@ function horoscope(day, month){
     }
 }
 
-function openModal(name){
+function openModal(name){ //this function will open the model based off of the derived character name from the date input
     const audioPlayer = document.querySelector("#speakers");
     const modal = document.querySelector(`#${name}Modal`);
     modal.style.display = "block";
@@ -38,10 +38,10 @@ function openModal(name){
 
 }
 
-function main(name, date){
+function main(name, date){ // this is the main function which handles the input logic
     const dt = new Date(date);
     const month = dt.getMonth() + 1;
-    const day = dt.getDate();
+    const day = dt.getDate();// ^^ this will get the correct date type
 
     const character = horoscope(day, month);
     openModal(character);
@@ -49,7 +49,7 @@ function main(name, date){
 
 window.onload=function(){
 
-    const soundButtons = document.querySelectorAll(".js-sound-button");
+    const soundButtons = document.querySelectorAll(".js-sound-button"); //this code is from lecture but manipulated to play sound AND display the modal
     const audioPlayer = document.querySelector("#speakers");
 
     soundButtons.forEach(function (individualButtonElement) {

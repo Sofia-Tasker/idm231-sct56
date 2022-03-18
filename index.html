@@ -9,6 +9,7 @@
     <title>Marvel Horoscope</title>
 </head>
 <body>
+    <!-- Header includes: Help Button, and input form -->
     <header>
         <button class="js-sound-button help" data-audio-file="silence.mp3" data-modal="helpModal">Help?</button>
         <div class="inputForm">
@@ -22,7 +23,8 @@
             <button onclick="main(document.getElementById('name').value,document.getElementById('dob').value)">Assemble!</button>
         </div>
     </header>
-
+    
+    <!-- Main Content, AKA the image block -->
     <div class="image-grid">
         <a class="js-sound-button img" data-audio-file="ironman.mp3" data-modal="ironmanModal">
             <img src="./images/ironman.jpeg" alt="Ironman">
@@ -62,8 +64,10 @@
         </a>
     </div>
 
+    <!-- Instantiate the speaker -->
     <audio id="speakers"></audio>
 
+    <!-- Help button Modal -->
     <div id="helpModal" class="modal" >  
         <div class="modal-content">
             <button class="closeModal">Close</button>
@@ -78,6 +82,7 @@
         </div>
     </div>
 
+    <!-- Character Modals -->
     <div id="ironmanModal" class="modal" >  
         <div class="modal-content">
             <button class="closeModal">Close</button>
