@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <button class="help">?</button>
+        <button class="js-sound-button help" data-audio-file="silence.mp3" data-modal="helpModal">Help?</button>
         <div class="inputForm">
             <form class="inputs">
                 <label for="name">First Name:</label>
@@ -24,59 +24,238 @@
     </header>
 
     <div class="image-grid">
-        <a href="./ironman.html" class="img">
+        <a class="js-sound-button img" data-audio-file="ironman.mp3" data-modal="ironmanModal">
             <img src="./images/ironman.jpeg" alt="Ironman">
         </a>
-        <a href="./captainAmerica.html" class="img">
+        <a class="js-sound-button img" data-audio-file="captainAmerica.mp3" data-modal="captainAmericaModal">
             <img src="./images/captainAmerica.jpeg" alt="captainAmerica">
         </a>
-        <a href="./blackWidow.html" class="img">
+        <a class="js-sound-button img" data-audio-file="blackWidow.mp3" data-modal="blackWidowModal">
             <img src="./images/blackWidow.jpeg" alt="blackWidow">
         </a>
-        <a href="./thor.html" class="img">
+        <a class="js-sound-button img" data-audio-file="thor.mp3" data-modal="thorModal">
             <img src="./images/thor.jpeg" alt="thor">
         </a>
-        <a href="./hawkeye.html" class="img">
+        <a class="js-sound-button img" data-audio-file="hawkeye.mp3" data-modal="hawkeyeModal">
             <img src="./images/hawkeye.jpeg" alt="hawkeye">
         </a>
-        <a href="./hulk.html" class="img">
+        <a class="js-sound-button img" data-audio-file="hulk.mp3" data-modal="hulkModal">
             <img src="./images/hulk.jpeg" alt="hulk">
         </a>
-        <a href="./vision.html" class="img">
+        <a class="js-sound-button img" data-audio-file="vision.mp3" data-modal="visionModal">
             <img src="./images/vision.jpeg" alt="vision">
         </a>
-        <a href="./spiderman.html" class="img">
+        <a class="js-sound-button img" data-audio-file="spiderman.mp3" data-modal="spidermanModal">
             <img src="./images/spiderman.jpeg" alt="spiderman">
         </a>
-        <a href="./drStrange.html" class="img">
+        <a class="js-sound-button img" data-audio-file="drStrange.mp3" data-modal="drStrangeModal">
             <img src="./images/drStrange.jpeg" alt="drStrange">
         </a>
-        <a href="./blackPanther.html" class="img">
+        <a class="js-sound-button img" data-audio-file="blackPanther.mp3" data-modal="blackPantherModal">
             <img src="./images/blackPanther.jpeg" alt="blackPanther">
         </a>
-        <a href="./loki.html" class="img">
+        <a class="js-sound-button img" data-audio-file="loki.mp3" data-modal="lokiModal">
             <img src="./images/loki.jpeg" alt="loki">
         </a>
-        <a href="./winterSoldier.html" class="img">
+        <a class="js-sound-button img" data-audio-file="winterSoldier.mp3" data-modal="winterSoldierModal">
             <img src="./images/winterSoldier.jpeg" alt="winterSoldier">
         </a>
-
-
-
-
-        <!-- <img src="./images/ironman.jpeg" alt="Ironman">
-        <img src="./images/captainAmerica.jpeg" alt="Captain America">  
-        <img src="./images/blackWidow.jpeg" alt="Black Widow">
-        <img src="./images/thor.jpeg" alt="Thor">
-        <img src="./images/hawkeye.jpeg" alt="Hawkeye">
-        <img src="./images/hulk.jpeg" alt="Hulk">
-        <img src="./images/vision.jpeg" alt="Vision">
-        <img src="./images/spiderman.jpeg" alt="Spiderman">
-        <img src="./images/drStrange.jpeg" alt="Dr Strange">
-        <img src="./images/blackPanther.jpeg" alt="Black Panther">
-        <img src="./images/loki.jpeg" alt="Loki">
-        <img src="./images/winterSoldier.jpeg" alt="Winter Soldier"> -->
     </div>
-    
+
+    <audio id="speakers"></audio>
+
+    <div id="helpModal" class="modal" >  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <h1>
+                Welcome to Marvel Horoscope!
+            </h1>
+            <p class="blurb">
+                To use this website, input your name and date. Then press Assemble! You 
+                will then get your Marvel character, which is based on your date of birth. 
+                If you want to explore the other characters, simply click their image!
+            </p>  
+        </div>
+    </div>
+
+    <div id="ironmanModal" class="modal" >  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/ironman.jpeg" alt="ironman">
+            <h1>
+                Ironman
+            </h1>
+            <p class="blurb">
+                You are Ironman! You are smart and resourceful. When in a difficult position, you are a great at problem solving. 
+                You also can sometimes make snarky jokes, but thats just part of your charm! On the surface you seem self absorbed 
+                and a bit unaproachable, but when somebody gets to know you, they find that you care a lot about others and are 
+                always willing to put in effort to help the greater good.
+            </p>  
+        </div>
+    </div>
+
+    <div id="captainAmericaModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/captainAmerica.jpeg" alt="captainAmerica">
+            <h1>
+                Captain America
+            </h1>
+            <p class="blurb">
+                You are Captain America! You always look on the bright-side of things. You do what feels right in your heart, regardless of what 
+                others may say. You are determined, loyal, and reliable. Sometimes you might be a bit of a rule follower, but you also know when 
+                breaking the rules might be better. You like to follow a schedule, and value structure in your life.
+            </p>
+        </div>
+    </div>
+
+    <div id="blackWidowModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/blackWidow.jpeg" alt="blackWidow">
+            <h1>
+                Black Widow
+            </h1>
+            <p class="blurb">
+                You are Black Widow! You have conquered a lot in your past, but that just makes your stronger now! You 
+                value your friends as if they are family. You are quick witted and always ready to get to work with no BS. 
+                You are an advocate for the little guy, and there for the big guy when times are hard. 
+            </p>
+        </div>
+    </div>
+
+    <div id="thorModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/thor.jpeg" alt="thor">
+            <h1>
+                Thor
+            </h1>
+            <p class="blurb">
+                You are Thor! You are charming, very intellegent, and also confident. You strive to be the best at your field and are willing 
+                to go head to head with anybody who is up for a challenge. You are loyal, and stay true to your upbringing. You value your 
+                friends and family, and will do anything to protect the people you love. 
+            </p>
+        </div>
+    </div>
+
+    <div id="hawkeyeModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/hawkeye.jpeg" alt="hawkeye">
+            <h1>
+                Hawkeye
+            </h1>
+            <p class="blurb"> 
+                You are Hawkeye! You are ready to help anybody who needs it. you are always willing to put yourself on the line for the greater 
+                good. You might not be the MVP, but you still put in 100% effort when you need to. People trust you and value your friendship. 
+                You are always up for the challenge, and you are rarely ever fazed by even the craziest of stuff. 
+            </p>
+        </div>
+    </div>
+
+    <div id="hulkModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/hulk.jpeg" alt="hulk">
+            <h1>
+                Hulk
+            </h1>
+            <p class="blurb">
+                You are Hulk! You are smart when you want to be, but a real fighter too! You are loyal and ready to defend the right cause. 
+                You are a strong person both mentally and physically. You don't shy away from a fight, but you also know how to beat people 
+                intellectually. You also don't mind mean thoughts or actions because you are stronger than those who choose to bully you.
+            </p>
+        </div>
+    </div>
+
+    <div id="visionModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/vision.jpeg" alt="vision">
+            <h1>
+                Vision
+            </h1>
+            <p class="blurb">
+                You are Vision! You are smart, wise, and reflective. You know that violence isn't always the answer, and you proove that point 
+                by outsmarting people. You are kind and sensitive, but also eager to keep learning. You don't like bad people get to you, and you 
+                try your best to show people around you the best path.
+            </p>
+        </div>
+    </div>
+
+    <div id="spidermanModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/spiderman.jpeg" alt="Spiderman">
+            <h1>
+                Spiderman
+            </h1>
+            <p class="blurb">
+                You are Spiderman! You are charasmatic, fun and youthful! You are bold and aren't fazed by scary situations. You see the bright-side 
+                in even the darkest moments. You are proactive and ready to defend your friends and family. You are sometimes a little goofy and 
+                naive, but that isn't a bad thing. You look at things with a fresh perspective that others might not understand, but definately value.
+            </p>
+        </div>
+    </div>
+
+    <div id="drStrangeModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/drStrange.jpeg" alt="drStrange">
+            <h1>
+                Dr Strange
+            </h1>
+            <p class="blurb">
+                You are Dr. Strange! You are very intellegent and always up to learn new things. You are successful at anything you put your 
+                mind to. You are also very attentive to people around you. Additionally, you believe that every action has a reaction.
+            </p>
+        </div>
+    </div>
+
+    <div id="blackPantherModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/blackPanther.jpeg" alt="blackPanther">
+            <h1>
+                Black Panther
+            </h1>
+            <p class="blurb">
+                You are Black Panther! You are very family and culture oriented. You believe in serving the greater good. You aren't one for 
+                attention, but you are willing to go out of your way to right a wrong. You also belive in tradition and value your and other's 
+                heratige. Also, you are tech savy and like to try new technology.
+            </p>
+        </div>
+    </div>
+
+    <div id="lokiModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/loki.jpeg" alt="loki">
+            <h1>
+                Loki
+            </h1>
+            <p class="blurb">
+                You are Loki! You are a little mischievious, but also very faithful. You appreciate your family and also will are determined 
+                to be successful. You are very intellegent, and also have a good sence of humor. Also you like to be in the spotlight and 
+                have people apprecaite things that you've done.
+            </p>
+        </div>
+    </div>
+
+    <div id="winterSoldierModal" class="modal">  
+        <div class="modal-content">
+            <button class="closeModal">Close</button>
+            <img class="heroImg" src="./images/winterSoldier.jpeg" alt="winterSoldier">
+            <h1>
+                Winter Soldier
+            </h1>
+            <p class="blurb">
+                You are Winter Soldier! You like to run under the radar. You might have had a hard past, but you are loyal to the end. You 
+                believe in friends and family first. You like to be independent, unless you are with your best friend, then you are inseperable. 
+                You are not always the most approchable, but once someone gets past your initial barier you will always be there for them. 
+            </p>
+        </div>
+    </div>
 </body>
 </html>

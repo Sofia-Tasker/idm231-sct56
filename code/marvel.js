@@ -29,40 +29,13 @@ function horoscope(day, month){
     }
 }
 
-function page(character){
-    if(character == "ironman") { 
-        window.location.replace("./ironman.html"); 
-    } 
-    else if (character == "captainAmerica"){
-        window.location.replace("./captainAmerica.html"); 
-    }
-    else if (character == "blackWidow"){
-        window.location.replace("./blackWidow.html"); 
-    }
-    else if (character == "thor"){
-        window.location.replace("./thor.html"); 
-    }
-    else if (character == "hawkeye"){
-        window.location.replace("./hawkeye.html"); 
-    }
-    else if (character == "vision"){
-        window.location.replace("./vision.html"); 
-    }
-    else if (character == "spiderman"){
-        window.location.replace("./spiderman.html"); 
-    }
-    else if (character == "drStrange"){
-        window.location.replace("./drStrange.html"); 
-    }
-    else if (character == "blackPanther"){
-        window.location.replace("./blackPanther.html"); 
-    }
-    else if (character == "loki"){
-        window.location.replace("./loki.html"); 
-    }
-    else if (character == "winterSoldier"){
-        window.location.replace("./winterSoldier.html"); 
-    }
+function openModal(name){
+    const audioPlayer = document.querySelector("#speakers");
+    const modal = document.querySelector(`#${name}Modal`);
+    modal.style.display = "block";
+    audioPlayer.src = `./sounds/${name}.mp3`
+    audioPlayer.play();
+
 }
 
 function main(name, date){
@@ -71,9 +44,29 @@ function main(name, date){
     const day = dt.getDate();
 
     const character = horoscope(day, month);
-
-    console.log(name);
-    console.log(character);
-
-    page(character);
+    openModal(character);
 }
+
+window.onload=function(){
+
+    const soundButtons = document.querySelectorAll(".js-sound-button");
+    const audioPlayer = document.querySelector("#speakers");
+
+    soundButtons.forEach(function (individualButtonElement) {
+        const audioTrackSource = individualButtonElement.getAttribute("data-audio-file");
+        const modalSource = individualButtonElement.getAttribute('data-modal');
+        const modal = document.getElementById(modalSource);
+
+        const closeBtn = modal.getElementsByClassName('closeModal')[0];
+        
+        individualButtonElement.addEventListener("click", function () {
+            modal.style.display = "block";
+            audioPlayer.src = `./sounds/${audioTrackSource}`
+            audioPlayer.play();
+        });
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+            audioPlayer.pause();
+        });
+    });
+};
